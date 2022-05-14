@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41C474C282FACDD0069AA42 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C474A282FACDD0069AA42 /* ProgramCell.swift */; };
+		F41C474D282FACDD0069AA42 /* ProgramCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41C474B282FACDD0069AA42 /* ProgramCell.xib */; };
 		F4584BFF2813183700CC26E4 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4584BFE2813183700CC26E4 /* ProductModel.swift */; };
 		F4AC278A2812FE600089ABA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC27892812FE600089ABA1 /* AppDelegate.swift */; };
 		F4AC278C2812FE600089ABA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC278B2812FE600089ABA1 /* SceneDelegate.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41C474A282FACDD0069AA42 /* ProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
+		F41C474B282FACDD0069AA42 /* ProgramCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramCell.xib; sourceTree = "<group>"; };
 		F4584BFE2813183700CC26E4 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		F4AC27862812FE600089ABA1 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AC27892812FE600089ABA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				F4AC27BF281300930089ABA1 /* ProductCell.xib */,
 				F4AC27C2281303710089ABA1 /* BannerCell.swift */,
 				F4AC27C3281303710089ABA1 /* BannerCell.xib */,
+				F41C474A282FACDD0069AA42 /* ProgramCell.swift */,
+				F41C474B282FACDD0069AA42 /* ProgramCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				F4AC27C1281300930089ABA1 /* ProductCell.xib in Resources */,
 				F4AC27932812FE630089ABA1 /* Assets.xcassets in Resources */,
 				F4AC27912812FE600089ABA1 /* Main.storyboard in Resources */,
+				F41C474D282FACDD0069AA42 /* ProgramCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +309,7 @@
 				F4AC27BC281300360089ABA1 /* SearchCell.swift in Sources */,
 				F4AC27C0281300930089ABA1 /* ProductCell.swift in Sources */,
 				F4AC278A2812FE600089ABA1 /* AppDelegate.swift in Sources */,
+				F41C474C282FACDD0069AA42 /* ProgramCell.swift in Sources */,
 				F4AC278C2812FE600089ABA1 /* SceneDelegate.swift in Sources */,
 				F4584BFF2813183700CC26E4 /* ProductModel.swift in Sources */,
 				F4AC27C4281303710089ABA1 /* BannerCell.swift in Sources */,

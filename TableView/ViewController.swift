@@ -8,7 +8,7 @@
 import UIKit
 
 enum ViewControllerCellType : Int, CaseIterable {
-  case search = 0, banner = 1, product = 2
+  case search = 2, banner = 1, program = 0 ,product = 3
 }
 
 class ViewController: UIViewController {
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         self.tableView.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
         self.tableView.register(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "ProductCell")
         self.tableView.register(UINib(nibName: "BannerCell", bundle: nil), forCellReuseIdentifier: "BannerCell")
+        self.tableView.register(UINib(nibName: "ProgramCell", bundle: nil), forCellReuseIdentifier: "ProgramCell")
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.separatorStyle = .none
@@ -58,6 +59,8 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             return 1
         case ViewControllerCellType.product.rawValue :
             return self.productList.count
+        case ViewControllerCellType.program.rawValue :
+            return 1
         default:
             return .zero
         }
@@ -79,6 +82,11 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
             cell.selectionStyle = .none
             cell.setData(model : self.productList[indexPath.row])
+            return cell
+            
+        case ViewControllerCellType.program.rawValue :
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProgramCell", for: indexPath) as! ProgramCell
+            cell.selectionStyle = .none
             return cell
         default:
             return UITableViewCell()
